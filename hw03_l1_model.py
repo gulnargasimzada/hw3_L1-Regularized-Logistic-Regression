@@ -95,11 +95,12 @@ for name, idxs in [("FALSE POSITIVES", fp), ("FALSE NEGATIVES", fn)]:
         print(text)
 
 # Save ALL misclassified chunks to a CSV file
-with open("hw03_l1_misclassified.csv", "w", newline="", encoding="utf-8") as f:
+Path("outputs").mkdir(exist_ok=True)
+with open(Path("outputs") / "hw03_l1_misclassified.csv", "w", newline="", encoding="utf-8") as f:
     writer = csv.writer(f)
     writer.writerow(["test_idx", "error_type", "label", "pred", "p_core", "text"])
     for etype, idxs in [("FP", fp), ("FN", fn)]:
         for i in idxs:
             writer.writerow([i, etype, y_test[i], y_pred[i], round(y_prob[i], 4), X_test_texts[i]])
 
-print("\nAll misclassified chunks saved to hw03_l1_misclassified.csv")
+print("\nAll misclassified chunks saved to outputs/hw03_l1_misclassified.csv")

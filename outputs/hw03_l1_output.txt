@@ -1,0 +1,66 @@
+﻿Confusion matrix:
+[[1981    0]
+ [   6 1923]]
+
+Classification report:
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      1981
+           1       1.00      1.00      1.00      1929
+
+    accuracy                           1.00      3910
+   macro avg       1.00      1.00      1.00      3910
+weighted avg       1.00      1.00      1.00      3910
+
+ROC AUC: 1.0
+
+Non-zero coefficients: 29 / 16198 (0.2%)
+
+Top 15 positive-weight words (CORE = 1):
+  trade                174.8155
+  merchants            148.5259
+  merchant             123.8644
+  marchants            89.9316
+  marchant             66.2433
+  staple               57.3775
+  factor               56.8939
+  adventurers          42.8610
+  chapman              36.4967
+  adventurer           31.3346
+  purser               28.6197
+  venturers            12.0464
+  ship                 3.0637
+  have                 1.8259
+  william              1.6837
+
+Top 15 negative-weight words (NEG = 0) [6 found]:
+  god                  -2.7433
+  that                 -2.6385
+  it                   -0.8807
+  christ               -0.3506
+  not                  -0.3178
+  he                   -0.0108
+
+False positives (label NEG, predicted CORE): 0
+False negatives (label CORE, predicted NEG): 6
+
+===== FALSE POSITIVES (top 5) =====
+
+===== FALSE NEGATIVES (top 5) =====
+
+[test idx 1237] label=1 pred=0 P(CORE)=0.022
+and the waighe of Essex cheese 336 li. averdupois. The sacke of wooll formerly so famoused by the staplers, did Wooll weight. weigh 364 li. averdupois, two waighes of wooll, make a sacke, and 12 sacks make a laste. The last of herrings containeth 10 thousand, and every thouΓêúsand Herrings measure. containe ten hundred, and every hundred six score or 120. Leade, is sold by the foder, the loade being 175 li. and the Lead weight. fother maketh accordingly 19┬╜. hundred of 112 li. per cent. It is also to be noted, that of this pound of 16 ounces averduΓêúpois, Three QuinΓêútars in England used. is made in England, three severall quintals, for weighing of sundry sorts of merchandise.
+
+[test idx 3162] label=1 pred=0 P(CORE)=0.100
+If it be the absence of their children that troubles them so much,Absence of children cannot in reason trouble them. that they enioy not ^he companie of them, whom they loue so deerly, first this is too effeminate and too womanish a kind of loue, not to be able to endure their absence, when it is so beneficial vnto them. Secondly, how manie be ^^ ere, that vpon diuers occasions neuer see their children in manie yeares, either because they are marc^ant-venturers, or serue some where in the wa^^es, or beare office in the Common-wea^^h* and their parents are content they should be from th^m, preferring the benefit and commoditie of their children, before their priuate comfort? 14.
+
+[test idx 3465] label=1 pred=0 P(CORE)=0.218
+Calais in Picardy 111 ll Ordinary weight.92 ll Merchants weight.114 ll The English wooll weight. Genua 102 ll Weight for Spices.85 ll By the great weight. Carga, or Charge, is 270 ll small weight. Marsellis.--111 ll. Saint Antoine.--127 ll. Aquismort. 102 ll. And all France generally 111 ll. Lions weight are some 102 ll, or 94 @ as aforesaid. Mirabel. 102 ll. And all France generally 111 ll. Lions weight are some 102 ll, or 94 @ as aforesaid. Calsada. 102 ll. And all France generally 111 ll. Lions weight are some 102 ll, or 94 @ as aforesaid. Offerte. 102 ll. And all France generally 111 ll. Lions weight are some 102 ll, or 94 @ as aforesaid. SPAINE.
+
+[test idx 945] label=1 pred=0 P(CORE)=0.249
+Cliffords Inne in Fleetstreet, Thavies Inne in Oldborne, Furnevals Inne in Oldborne, Barnards Inne in Oldborne, Staple Inne in Oldborne, Without the Liberties. Houses of Court. Grayes Inne in Oldborne, Lincolnes Inne in ChancerieΓêúlane, by the old Temple. Houses of Chancerie without Temple barre, in the liberty of Westminster. Clements Inne, New Inne, Lions Iune, There was sometime an Inne of SerΓêúgeants in Oldborne, A SergeΓêúants Inne in Oldborne as ye may reade of Scroopes Inne, over against Saint AnΓêúdrews Church. There was also one other Inne of ChanΓêúcerie, Chesters Inne, or Strand Inne, in place whereas standeth Sommerset House.
+
+[test idx 2134] label=1 pred=0 P(CORE)=0.422
+Both the one and the other is most untrue; for this I can assure you, my selfe being as neare them as any, that hee was so farre either from promising, or putting them in hope, that when first their Secretarie (called as I remember) Signior Ieffrey an ItaΓêúlian, being sent to treate with the Lord Deputie for grace, was flatly refused: And afterwards their Coronell named Don SebaΓêústian, came forth to intreate that they might part with their Armes like Souldiers, at the least with their lives according to the custome of Warre, and Law of Nations, it was strongly denyed him, and tolde him by the Lord Deputie himselfe, that they could not iustly pleade either custome of Warre, or Law of Nations, for that they were not any lawfull Enemies, and if they were, hee willed them to shew by what commission they came thither inΓêúto another Princes Dominions to warre, whether from the Pope or the King of Spaine, or any other, the which when they said they had not, but were onely adventurers that came to seeke fortune aΓêúbroad, and to serve in warres amongst the Irish, who desired to enΓêútertaine them.
+
+All misclassified chunks saved to outputs/hw03_l1_misclassified.csv

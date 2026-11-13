@@ -1,0 +1,90 @@
+﻿Confusion matrix:
+[[1906   75]
+ [ 131 1798]]
+
+Classification report:
+              precision    recall  f1-score   support
+
+           0       0.94      0.96      0.95      1981
+           1       0.96      0.93      0.95      1929
+
+    accuracy                           0.95      3910
+   macro avg       0.95      0.95      0.95      3910
+weighted avg       0.95      0.95      0.95      3910
+
+ROC AUC: 0.987
+
+Non-zero coefficients: 16198 / 16198 (100.0%)
+
+Top 15 positive-weight words (CORE = 1):
+  trade                27.5556
+  merchants            22.2859
+  merchant             17.6244
+  marchants            13.4153
+  marchant             8.7089
+  factor               5.1888
+  staple               4.9854
+  commodities          4.3283
+  ship                 3.1485
+  buy                  2.9950
+  chapman              2.9565
+  exchange             2.9491
+  goods                2.9325
+  ships                2.7257
+  money                2.7011
+
+Top 15 negative-weight words (NEG = 0) [15 found]:
+  god                  -3.1221
+  power                -1.9278
+  pope                 -1.8971
+  rome                 -1.8883
+  christ               -1.7666
+  spirit               -1.6501
+  enemies              -1.6452
+  gods                 -1.6270
+  forces               -1.6004
+  faith                -1.5932
+  against              -1.5706
+  vertue               -1.5056
+  that                 -1.4336
+  de                   -1.3527
+  armie                -1.3487
+
+False positives (label NEG, predicted CORE): 75
+False negatives (label CORE, predicted NEG): 131
+
+===== FALSE POSITIVES (top 5) =====
+
+[test idx 2151] label=0 pred=1 P(CORE)=0.885
+For Bayes, Sayes, Perpetuanoes, and the like Commoditiet, Licence of Tobacco. which these two yeares haue beene solde in Spaine with 15. vpon the hundred losse to procure money to buy the same, are now sold to so much profite, besides the benefite of his Maiesties imposition and aduancement of the Virginia and Bermodaes Plantation: the like may bee practised vpon other Commodities, without incurring the inconuenciences of Monopolie. Concerning Companies or Societies to deale in a ioynt Stocke or apart: it may bee thought Ioynt Stockes or apart. conuenient to haue ioynt Stockes for Remote places, as the East Indies and Persia.
+
+[test idx 149] label=0 pred=1 P(CORE)=0.849
+A matter of great consequence, where they might haue all matter for shipping (which caused the Great Turke once to prouide here, at an easier charge carried from hence toSues in the bottome of the Red Sea. Sues, then from Alexandria) and here they might both build their Fleets, and be furnished of sustenance, might send at any time to all places in the South (which from Goa cannot be done but with the Monsons) and might cause that no Ship of Moores should lade Pepper, Cinamon, or other commodities at Martauan, Reitau, Iuncalao, Tanassarin, and Queda, for Surat or Mecca, but with custome to them and passe from them.
+
+[test idx 416] label=0 pred=1 P(CORE)=0.844
+Cley.Item, in the yere of our Lord 1395. about the feast of the natiuitie of S. Iohn Baptist, the forenamed Godekin and Stertebeker, with others their accomplices of the Hans, vnlawfully took vpon the sea a certain ship of Nicholas Steyhard and Iohn Letis of Cley called the Nicholas, (wherof Iohn Prest was master) and conueyed the said ship vnto Mawstrond, and there robbed the said master and his companie of diuers commodities, namely of furniture and salt fishes, being in the said ship, to the value of 320. nobles.
+
+[test idx 2144] label=0 pred=1 P(CORE)=0.814
+by the pood, at 40 robbles per pood: and note that the white are comΓêúmonly worst esteemed b in price. Losh hides are sold by the piece, the largest and not worm-eaten Losh hids. is the best, from 6 grevens to 5 rubbles the piece, as in goodnesse. Duckes feathers sold by the pood, as in goodnesse from 3 to 5 rubble, Feathers. the pood. Caviare is also a principall commoditie here sold by the pood, and Caviar. commonly worth 40 Altines the pood. Course Linnen is made here in great quantitie sold by the 1000 ArΓêúchine Linnens. of ┬╜ yard, and ┬╝ the broad from 15 to 20 robbles the 1000 ArΓêúchine, as it is found in finenesse.
+
+[test idx 1494] label=0 pred=1 P(CORE)=0.813
+the tiger admiral the Matthew vice-admiral and the Richard and Barnard have make all thing ready for to fight these five ship which rid here the one be a great ship of biscay of seven hundred ton and the two hollander which we find the six of june in pooppy-bay and one small pink of Amsterdam and another small ship of Rochel this great ship of biscay a biscayn ship of 700. tun which we expect will have fight with we send their captain aboard of we before we come to a anchor and submit themselves unto the general the two ship of Amsterdam who master name be these viz.
+
+===== FALSE NEGATIVES (top 5) =====
+
+[test idx 1019] label=1 pred=0 P(CORE)=0.066
+As God he had no beginning, as man he received a beginning in time, Galath. 4.4. As man, he was made of his mother; as God, his mother was made by him: so he is both Mariae Factor, and Filius, the Father of Mary, and the Son of Mary. As God, he chargeth us to Continue in verbo suo, in his owne Word, Ioh. 8.31. and vers. 51. If a man keepe my saying, he shall never see death. As man, he confesseth, Ioh. 7.16. My doctrine is not mine, but his that sent me. As heIohn 8.49. honours the Father, so hee receives honour of the Father, Ioh. 13.32. God doth glorifie him, and is glorified in him.
+
+[test idx 2934] label=1 pred=0 P(CORE)=0.100
+Those likewise among the Papists, that proc├⌐ede DoΓêúctors, or take any degr├⌐e in schooles do professe, that they most firmely admit and embrace the traditions of the ApoΓêústles, and the Church, and other ecclesiasticall obscruances, and constitutions. Apostolicas & ecclesiasticas traditiones, reliΓêúquas{que} eiusdem Ecclesie obseruationes, & constitutiones firmissim├¿ admitto, saith euery one of them. Bellarmine lib. 4. de verbo Dei cap. 1. beginning to of traditions, hitherto (saith he) we haue disputed of the written word of God; now we will begin to speake briefly of the word of God not written: accompting traditions to be the word of God as well as holy scriptures. Aliud hodie religionis Christiane fundament (saith StapleΓêúton) Praefat ante relect prinΓêúcip. doctrin.
+
+[test idx 3552] label=1 pred=0 P(CORE)=0.100
+So pope Iulio the second finding no meanes to breake his faith with king Lewis the twelft, that he might fly from the treatie of Cambray, he did not say, that hee was not tied to his oath, but he tooke occasion to aduance a factor in Rome to the bishoprike of Arles in Prouence, without the priuitie of the king or his ambassadour, which did reside at Rome: where with the king being incensed (as the case deserued) he caused all the fruits which the beneficers of Rome had in Fraunce, to be seized on: then the pope hauing found what he sought for, declared himselfe an open enemie vnto the king.
+
+[test idx 3162] label=1 pred=0 P(CORE)=0.159
+If it be the absence of their children that troubles them so much,Absence of children cannot in reason trouble them. that they enioy not ^he companie of them, whom they loue so deerly, first this is too effeminate and too womanish a kind of loue, not to be able to endure their absence, when it is so beneficial vnto them. Secondly, how manie be ^^ ere, that vpon diuers occasions neuer see their children in manie yeares, either because they are marc^ant-venturers, or serue some where in the wa^^es, or beare office in the Common-wea^^h* and their parents are content they should be from th^m, preferring the benefit and commoditie of their children, before their priuate comfort? 14.
+
+[test idx 3836] label=1 pred=0 P(CORE)=0.165
+And Ahab having kild Naboth, went to recreate himselfe in his Vineyard, Gen. 4.17. 1 King. 21.16.19. And Saul, when God had cast him off, would have pleased himselfe with the honour of the people, 1 Sam. 15.30. so these, when the horror of their oathes, blasphemies, thefts, whoredomes, and other prodigious uncleannesse, hath caused a dejection of spirit, and the worme of conscience to sting them, how should they remedy it? How! why (as if Sathan alone could expell Sathan) straight to the Taverne, and drinke sorrow and care away; or perhaps there is a Factor of Hell present, that cheares him up, as Iesabel did Ahab when he was sicke for want of Naboth's Vineyard, 1 King.
+
+All misclassified chunks saved to outputs/hw03_l2_misclassified.csv

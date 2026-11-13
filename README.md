@@ -49,7 +49,9 @@ Each script prints:
   only coefficients strictly above / below zero are listed
 - the 5 most confident false positives and false negatives
 
-All misclassified chunks are saved to a CSV file for the label-noise analysis.
+The full console output of each script and all misclassified chunks are saved in
+`outputs/`, so the results can be checked without re-running the code (a different
+package version could change or break the pipeline; see the nltk note below).
 
 ## Files
 
@@ -59,7 +61,8 @@ All misclassified chunks are saved to a CSV file for the label-noise analysis.
 | `step9_prepare_datasets.py` | Balanced 80/20 train/test split |
 | `hw03_l2_baseline.py` | Logistic regression with L2 (default) |
 | `hw03_l1_model.py` | Logistic regression with L1 |
-| `hw03_l2_misclassified.csv`, `hw03_l1_misclassified.csv` | All misclassified test chunks |
+| `outputs/hw03_l2_output.txt`, `outputs/hw03_l1_output.txt` | Full printed results of each model |
+| `outputs/hw03_l2_misclassified.csv`, `outputs/hw03_l1_misclassified.csv` | All misclassified test chunks |
 
 ## How to run
 
@@ -77,10 +80,11 @@ pip install scikit-learn gensim tqdm "nltk==3.9.1"
    python step7_label_chunks.py
    python step9_prepare_datasets.py
    ```
-3. Run the two models:
-   ```bash
-   python hw03_l2_baseline.py
-   python hw03_l1_model.py
+3. Run the two models and save their output:
+   ```powershell
+   $env:PYTHONIOENCODING = "utf-8"
+   python hw03_l2_baseline.py | Out-File -FilePath outputs\hw03_l2_output.txt -Encoding utf8
+   python hw03_l1_model.py | Out-File -FilePath outputs\hw03_l1_output.txt -Encoding utf8
    ```
 
 `texts/`, `data/` and `.venv/` are not included in the repo (see `.gitignore`).

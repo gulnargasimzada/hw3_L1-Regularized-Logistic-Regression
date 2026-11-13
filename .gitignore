@@ -1,0 +1,9 @@
+# Virtual environment
+.venv/
+
+# Raw corpus (from Canvas) and generated data (recreated by step7 and step9)
+texts/
+data/
+
+# Python cache
+__pycache__/
